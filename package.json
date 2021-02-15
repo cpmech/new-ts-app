@@ -1,7 +1,13 @@
 {
-  "name": "new-react-app",
+  "name": "myapp",
   "version": "0.1.0",
-  "private": true,
+  "license": "MIT",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "tsnode": "ts-node -O '{\"module\":\"commonjs\",\"resolveJsonModule\":true}'",
     "start": "tsnode src/cli/index.ts",
