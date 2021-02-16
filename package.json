@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "tsnode": "ts-node -O '{\"module\":\"commonjs\",\"resolveJsonModule\":true}'",
-    "start": "tsnode src/cli/index.ts",
+    "start": "npm run tsnode src/cli/index.ts",
     "build": "rm -rf dist && rollup --config rollup.config.js",
     "test": "jest --verbose",
     "tw": "jest --watch --verbose",

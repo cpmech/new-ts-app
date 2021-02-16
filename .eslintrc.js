@@ -10,6 +10,7 @@ module.exports = {
   },
   plugins: ['@typescript-eslint'],
   rules: {
-    'explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
   },
 };
