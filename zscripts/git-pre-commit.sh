@@ -6,10 +6,10 @@ test_exit_code=$?
 
 # check tests exit code
 if [ $test_exit_code -ne 0 ]; then
-    echo "🥵 tests failed"
+    echo "❌ tests failed"
     exit 1
 else
-    echo "👍 tests"
+    echo "✅ tests"
 fi
 
 # get staged files

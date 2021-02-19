@@ -33,7 +33,7 @@ describe('customer', () => {
       email: '',
     };
     expect(checkType(refCustomer, bad1, optionalCustomer)).toBeNull();
-    expect(checkType(refCustomer, ok1, optionalCustomer)).toStrictEqual(ok2);
+    expect(checkType(refCustomer, ok1, optionalCustomer)).toStrictEqual(ok1);
     expect(checkType(refCustomer, ok2, optionalCustomer)).toStrictEqual(ok2);
   });
 });
