@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # run tests
-npm run test
+CI=true npm run test
 test_exit_code=$?
 
 # check tests exit code
