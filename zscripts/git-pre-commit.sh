@@ -2,6 +2,15 @@
 
 # run tests
 npm run test
+test_exit_code=$?
+
+# check tests exit code
+if [ $tsc_exit_code -ne 0 ]; then
+    echo "🥵 tests failed"
+    exit 1
+else
+    echo "👍 tests"
+fi
 
 # get staged files
 staged_files=$(git diff --cached --diff-filter=d --name-only | grep  -E '\.(ts|tsx)$')
