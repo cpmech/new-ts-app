@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# run tests
+npm run test
+
+# get staged files
 staged_files=$(git diff --cached --diff-filter=d --name-only | grep  -E '\.(ts|tsx)$')
 
 # skip if there are no js or ts files
