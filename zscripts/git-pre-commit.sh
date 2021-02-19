@@ -5,7 +5,7 @@ npm run test
 test_exit_code=$?
 
 # check tests exit code
-if [ $tsc_exit_code -ne 0 ]; then
+if [ $test_exit_code -ne 0 ]; then
     echo "🥵 tests failed"
     exit 1
 else
